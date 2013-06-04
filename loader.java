@@ -36,6 +36,7 @@ public class loader {
         @Override
         public void run() {
 
+            int counter = 0;
             Transaction transaction = client.openTransaction();
 
             Hashtable<Class, JAXBHandle> table = new Hashtable<Class, JAXBHandle>();
@@ -85,7 +86,6 @@ public class loader {
 
     static public int T = 8;
     static public int N = 2000;
-    static public int counter = 0;
     static public int docsPerTrans = 200;
     static public Boolean nodb = false;
     
